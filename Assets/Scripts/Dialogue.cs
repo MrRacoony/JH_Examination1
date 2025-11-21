@@ -15,6 +15,10 @@ public class Dialogue : MonoBehaviour
     private int currentIndex = -1;
 
 
+    private void Start()
+    {
+       NextDialogue(); 
+    }
     public void NextDialogue()
     {
         // If dialogue wasn't started: run the onStartDialogue-event, and add this dialogue to the Next-Button
