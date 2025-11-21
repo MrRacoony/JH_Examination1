@@ -127,6 +127,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 781c03367954124478c2d08ee8551b3c, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 781c03367954124478c2d08ee8551b3c, type: 2}
+  - {fileID: 7400000, guid: b0b3ff89c81a0714b916f2b73ebade37, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -148,40 +149,16 @@ MonoBehaviour:
   onTriggerEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2299240943879663660}
-        m_TargetAssemblyTypeName: UnityEngine.PolygonCollider2D, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 9033502328792697847}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2576021076208060647}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 539478290278514073}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: TriangleDead
           m_BoolArgument: 0
         m_CallState: 2
   onTriggerExit:
@@ -306,11 +283,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf16a6935b5cfa469c17c86cad7e98b, type: 3}
---- !u!1 &539478290278514073 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3992104683767718559, guid: cbf16a6935b5cfa469c17c86cad7e98b, type: 3}
-  m_PrefabInstance: {fileID: 3466173755966889734}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6821854546319924088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7977645404797289598, guid: cbf16a6935b5cfa469c17c86cad7e98b, type: 3}
