@@ -233,7 +233,6 @@ GameObject:
   - component: {fileID: 485753309}
   - component: {fileID: 485753308}
   - component: {fileID: 485753307}
-  - component: {fileID: 485753311}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -326,18 +325,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &485753311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485753306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8b9361035a1486498c0f5d74b5344d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +729,19 @@ MonoBehaviour:
         m_CallState: 2
   onCollisionExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 694397695}
+        m_TargetAssemblyTypeName: UnityEventOnCollision, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1256726657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,8 +1200,8 @@ MonoBehaviour:
   textBox: {fileID: 1827029940}
   nextButton: {fileID: 2011844383}
   dialogue:
-  - I touched the ball!
-  - That was very fun
+  - I think i can use the ball to touch the triangles
+  - I should try it and see what happens
   onStartDialogue:
     m_PersistentCalls:
       m_Calls:
@@ -1997,8 +1996,8 @@ SceneRoots:
   - {fileID: 3265014677885801379}
   - {fileID: 694397694}
   - {fileID: 3500282257393397275}
-  - {fileID: 485753310}
   - {fileID: 1256726660}
   - {fileID: 3514715112786290934}
   - {fileID: 2024366887}
   - {fileID: 20329444}
+  - {fileID: 485753310}
