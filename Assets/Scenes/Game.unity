@@ -847,8 +847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b8513741612746a86874bb79ea66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  jumpForce: 5
+  maxSpeed: 7
+  jumpForce: 7
   spriteRenderer: {fileID: 1626580709}
   animator: {fileID: 1626580712}
 --- !u!70 &1626580706

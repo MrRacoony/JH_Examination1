@@ -8,7 +8,7 @@ public class Volume_Master : MonoBehaviour
     [SerializeField] AudioMixer mixer;
     private void Start()
     {
-        setVolume(PlayerPrefs.GetFloat("volume"));
+        setVolume(PlayerPrefs.GetFloat("SavedMasterVolume"));
     }
 
     public void setVolume(float volume)
@@ -19,8 +19,8 @@ public class Volume_Master : MonoBehaviour
         }
         
         RefreshSlider(volume);
-        PlayerPrefs.SetFloat("Volume", volume);
-        mixer.SetFloat("Volume", Mathf.Log10(volume/100) * 20f);
+        PlayerPrefs.SetFloat("SavedMasterVolume", volume);
+        mixer.SetFloat("MasterVolume", Mathf.Log10(volume/100) * 20f);
     }
 
     public void setVolumeSlider()
